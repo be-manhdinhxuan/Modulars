@@ -149,6 +149,7 @@ button {
 /* Hero */
 .hero {
   margin-top: 158px;
+  font-family: var(--font-header);
 }
 
 .hero__block {
@@ -157,13 +158,13 @@ button {
 }
 
 .hero__content {
-  flex-shrink: 0;
   width: 34.5%;
 }
 
 .hero__heading {
   margin-top: 43px;
   max-width: 368px;
+  width: 100%;
   font-weight: 800;
   font-size: 5rem;
   line-height: 1.2;
@@ -217,10 +218,16 @@ button {
 
 .hero__watchvideo-text {
   margin-left: 15px;
+  font-family: Poppins, serif;
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 1.6;
   color: var(--text-color);
+}
+
+.hero__media {
+  position: relative;
+  max-width: 65.5%;
 }
 
 .hero__images {
@@ -238,10 +245,6 @@ button {
 
 .hero__img:nth-child(2) {
   margin-top: 77px;
-}
-
-.hero__media {
-  position: relative;
 }
 
 .hero__image--bg {
