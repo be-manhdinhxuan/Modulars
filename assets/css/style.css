@@ -40,7 +40,7 @@ button {
 
 .line-clamp {
   display: -webkit-box;
-  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-line-clamp: var(--line-clamp, 3);
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -71,6 +71,41 @@ button {
 .btn:hover {
   opacity: 0.9;
   cursor: pointer;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.625;
+  color: var(--text-color);
+}
+
+.section-title::before {
+  content: "";
+  display: inline-block;
+  margin-right: 21px;
+  margin-bottom: 10px;
+  width: 25px;
+  height: 1px;
+  background: var(--text-color);
+}
+
+.section-sub-title {
+  max-width: 520px;
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 4.2rem;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+.section-sub-title::after {
+  content: "";
+  display: inline-block;
+  margin-bottom: 6px;
+  width: 66px;
+  height: 2px;
+  background: var(--text-color);
 }
 
 /* Header top */
@@ -287,4 +322,104 @@ button {
   padding: 76px 121px;
   border-radius: 100.5px;
   background: #e2eddf;
+}
+
+/* Service */
+.service {
+  padding: 53px 0 78px;
+}
+
+.service__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service__control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 17px;
+  margin-top: 79px;
+  margin-right: 73px;
+}
+
+.service__control--btn {
+  width: 54px;
+  height: 54px;
+  border: none;
+  border-radius: 50%;
+  color: var(--text-color);
+  background: #e2eddf;
+  transition: 0.25s;
+}
+
+.service__control--btn:hover {
+  color: #fff;
+  background: var(--primary-color);
+  cursor: pointer;
+}
+
+.service__images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  margin-top: 76px;
+}
+
+.service__item {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.25s;
+}
+
+.service__item figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.service__item:hover {
+  background: #fff;
+  box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.service__item:hover .service__item-thumb {
+  transform: scale(1.03);
+}
+
+.service__item:hover .service__item-body {
+  padding: 24px 0 23px 18px;
+}
+
+.service__item-body {
+  padding-top: 24px;
+  padding-bottom: 15px;
+  transition: padding 0.25s ease;
+}
+
+.service__item-thumb {
+  width: 370px;
+  height: 318px;
+  object-fit: cover;
+  overflow: hidden;
+  transition: 0.25s;
+}
+
+.service__item-title {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: var(--text-color);
+}
+
+.service__item-title:hover {
+  text-decoration: underline;
+}
+
+.service__item-desc {
+  margin-top: 18px;
+  max-width: 268px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: var(--desc-color);
 }
