@@ -839,3 +839,74 @@ button {
   right: -50px;
   bottom: 240px;
 }
+
+/* Share */
+.share {
+  margin-top: 140px;
+  padding-bottom: 92px;
+}
+
+.share__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.share__sub-title::after {
+  display: none;
+}
+
+.share__heading-desc {
+  max-width: 547px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.625;
+  color: var(--desc-color);
+}
+
+.share__list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 103px;
+  text-align: center;
+}
+
+.share__item {
+  padding-top: 60px;
+  width: 350px;
+  height: 362px;
+  border-radius: 160px;
+  border: 1px solid #cecece;
+  transition: 0.5s;
+}
+
+.share__item:hover {
+  transform: translateY(-60px);
+  border: none;
+  box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
+}
+
+.share__item-title {
+  margin-top: 24px;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--text-color);
+}
+
+.share__item-desc {
+  max-width: 264px;
+  margin: 9px auto 0;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: var(--desc-color);
+}
+
+.share__item-desc:first-child {
+  max-width: 286px;
+}
