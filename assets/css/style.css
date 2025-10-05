@@ -73,6 +73,19 @@ button {
   cursor: pointer;
 }
 
+.image--bg {
+  --main-size: 340px;
+  position: absolute;
+  width: var(--main-size);
+  height: var(--main-size);
+  border-radius: var(--main-size);
+  background: #4dbb9a;
+  filter: blur(137px);
+  bottom: 81px;
+  right: 180px;
+  z-index: -1;
+}
+
 .section-title {
   font-weight: 500;
   font-size: 1.6rem;
@@ -282,18 +295,6 @@ button {
   margin-top: 77px;
 }
 
-.hero__image--bg {
-  position: absolute;
-  width: 340px;
-  height: 340px;
-  border-radius: 340px;
-  background: #4dbb9a;
-  filter: blur(137px);
-  bottom: 81px;
-  right: 180px;
-  z-index: -1;
-}
-
 .hero__images--decor-1 {
   position: absolute;
   top: -32px;
@@ -422,4 +423,209 @@ button {
   font-size: 1.4rem;
   line-height: 1.7;
   color: var(--desc-color);
+}
+
+/* About */
+.about {
+  padding: 78px 0;
+  margin-top: 78px;
+}
+
+.about__inner {
+  display: flex;
+  column-gap: 64px;
+}
+
+.about__images {
+  position: relative;
+}
+
+.about__images figure {
+  display: flex;
+  column-gap: 21px;
+}
+
+.about__img {
+  width: 284px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 210px;
+}
+
+.about__img:first-child {
+  margin-top: 77px;
+}
+
+.about__decor {
+  position: absolute;
+  top: -30px;
+  left: 54px;
+}
+
+.about__label {
+  position: absolute;
+  bottom: 8px;
+  right: -9px;
+  padding: 0 23px;
+  width: 144px;
+  height: 144px;
+  border-radius: 8px;
+  background: #fff;
+  font-family: var(--font-header);
+  box-shadow: 0px 7px 54px 0px rgba(154, 154, 154, 0.25);
+}
+
+.about__label-title {
+  margin-top: 19px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--text-color);
+}
+
+.about__label-desc {
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #575d5e;
+}
+
+.about__label-percent-block {
+  position: relative;
+  margin-top: 10px;
+}
+
+.about__label-percent {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--text-color);
+}
+
+.about__label-percent::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: #83a17d;
+  border-radius: 10px;
+}
+
+.about__label-percent--line {
+  margin-top: 3px;
+  width: 96px;
+  height: 2px;
+  border-radius: 10px;
+  background: #eaeaea;
+}
+
+.about__label-status {
+  margin-top: 3px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--text-color);
+  text-align: right;
+}
+
+.about__label-dot {
+  position: relative;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: var(--primary-color);
+  border-radius: 50%;
+}
+
+.about__label-dot::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border: 3px solid #eaeaea;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.about__label-member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.about__label-text {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--text-color);
+}
+
+.about__label-avt {
+  display: flex;
+  justify-content: end;
+}
+
+.about__label-avt img {
+  margin-left: -5px;
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.about__image--bg {
+  --main-size: 200px;
+  bottom: 150px;
+}
+
+/* About right */
+.about__title-line::before {
+  margin-bottom: 5px;
+}
+
+.about__sub-title-line::after {
+  display: none;
+}
+
+.about__desc {
+  margin-top: 11px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--desc-color);
+}
+
+.about__statistic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+
+.about__statistic-strong {
+  font-weight: 600;
+  font-size: 4.2rem;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+.about__statistic-desc {
+  max-width: 364px;
+  margin-left: 24px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: var(--desc-color);
+}
+
+.about__statistic-line {
+  margin-top: 20px;
+  width: 485px;
+  height: 1px;
+  background: #83a17d;
 }
