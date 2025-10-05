@@ -273,3 +273,18 @@ button {
   right: 0;
   z-index: 1;
 }
+
+/* Brand */
+.brand {
+  margin-top: 136px;
+  padding: 53px 0;
+}
+
+.brand__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 76px 121px;
+  border-radius: 100.5px;
+  background: #e2eddf;
+}
